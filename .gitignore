@@ -1,0 +1,12 @@
+/env
+migrations/
+instance/
+*.log
+*.pyc
+*.pyo
+__pycache__/
+config.py
+.vscode/
+.idea/
+
+
