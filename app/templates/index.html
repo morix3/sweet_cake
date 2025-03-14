@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Главная - Sweet Cakes{% endblock %}
+
+{% block content %}
+    <section class="bg-pink-100 py-20 text-center">
+        <h2 class="text-4xl font-bold text-pink-600">Вкусные и свежие торты на любой случай</h2>
+        <p class="mt-4 text-gray-700">Закажите торт прямо сейчас и порадуйте себя и своих близких!</p>
+        <a href="#catalog" class="mt-6 inline-block bg-pink-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-pink-600 transition">
+            Смотреть каталог
+        </a>
+    </section>
+
+    <section id="catalog" class="container mx-auto py-16">
+        <h2 class="text-3xl font-bold text-center text-gray-800">Наши торты</h2>
+        <div class="grid md:grid-cols-3 gap-8 mt-10">
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <div class="w-full h-60 bg-gray-300"></div>
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-gray-800">Шоколадный рай</h3>
+                    <p class="text-gray-600 mt-2">Насыщенный шоколадный вкус с нежным кремом.</p>
+                    <p class="text-pink-500 font-bold mt-3">1200 руб.</p>
+                </div>
+                <button class="mt-4 w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600 transition">Заказать</button>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <div class="w-full h-60 bg-gray-300"></div>
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-gray-800">Клубничное наслаждение</h3>
+                    <p class="text-gray-600 mt-2">Сочный клубничный крем с воздушными коржами.</p>
+                    <p class="text-pink-500 font-bold mt-3">1500 руб.</p>
+                </div>
+                <button class="mt-4 w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600 transition">Заказать</button>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <div class="w-full h-60 bg-gray-300"></div>
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-gray-800">Ванильный десерт</h3>
+                    <p class="text-gray-600 mt-2">Классический торт с ванильным кремом.</p>
+                    <p class="text-pink-500 font-bold mt-3">1100 руб.</p>
+                </div>
+                <button class="mt-4 w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600 transition">Заказать</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">О нас</h2>
+            <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                Мы создаем вкуснейшие торты на заказ с любовью и вниманием к каждой детали.
+                Наши мастера используют только натуральные ингредиенты, чтобы порадовать вас свежестью и неповторимым вкусом.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gray-200 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Свяжитесь с нами</h2>
+            <p class="mt-4 text-gray-700">Закажите торт по телефону или через мессенджеры</p>
+            <p class="mt-2 text-pink-500 font-bold text-lg">+7 (999) 123-45-67</p>
+            <p class="mt-1 text-gray-700">г. Саратов, ул. Вкусная, 10</p>
+            <div class="mt-5 flex justify-center space-x-4">
+                <div class="w-[40px] h-[40px] bg-gray-300"></div> WhatsApp
+                <div class="w-[30px] h-[30px] bg-gray-300"></div> Telegram
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Личный кабинет - Sweet Cakes{% endblock %}
+
+{% block content %}
+<div class="container mx-auto p-8">
+    <h2 class="text-3xl font-bold text-pink-500 mb-6">Личный кабинет</h2>
+
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold text-gray-800">Информация о пользователе</h3>
+        <div class="mt-4">
+            <p><strong>Имя:</strong> Иван Иванов</p>
+            <p><strong>Телефон:</strong> +7 900 123-45-67</p>
+            <p><strong>Электронная почта:</strong> ivan@example.com</p>
+        </div>
+
+        <div class="mt-6 border-t pt-4">
+            <h3 class="text-2xl font-bold text-gray-800">Мои заказы</h3>
+            <div class="mt-4 space-y-4">
+                <div class="flex justify-between items-center">
+                    <span>Шоколадный рай</span>
+                    <span class="text-gray-600">1200 руб.</span>
+                    <span class="text-gray-500">В процессе</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 border-t pt-4">
+            <button class="w-full bg-pink-500 text-white py-3 rounded-lg hover:bg-pink-600 transition">Изменить информацию</button>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Шоколадный рай - Sweet Cakes{% endblock %}
+
+{% block content %}
+    <section class="container mx-auto py-16 flex">
+        <div class="w-1/2">
+            <div class="w-full h-[600px] bg-gray-300 rounded-lg"></div>
+        </div>
+        <div class="w-1/2 pl-10">
+            <h2 class="text-4xl font-bold text-gray-800">Шоколадный рай</h2>
+            <p class="mt-4 text-gray-600">Насыщенный шоколадный вкус с нежным кремом. Этот торт идеально подойдет для любителей шоколада, он создан с любовью и вниманием к деталям.</p>
+            
+            <div class="mt-6">
+                <h3 class="text-2xl font-bold text-gray-800">Состав</h3>
+                <ul class="mt-2 text-gray-600">
+                    <li>Шоколадный бисквит</li>
+                    <li>Шоколадный крем</li>
+                    <li>Карамельный соус</li>
+                </ul>
+            </div>
+
+            <div class="mt-6">
+                <h3 class="text-2xl font-bold text-gray-800">Аллергены</h3>
+                <ul class="mt-2 text-gray-600">
+                    <li>Молоко</li>
+                    <li>Яйца</li>
+                    <li>Глютен</li>
+                </ul>
+            </div>
+
+            <p class="mt-6 text-pink-500 font-bold text-2xl">1200 руб.</p>
+
+            <button class="mt-4 w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600 transition">Заказать</button>
+        </div>
+    </section>
+{% endblock %}
